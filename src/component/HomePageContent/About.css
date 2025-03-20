@@ -1,0 +1,131 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Changed from center to flex-start to align left */
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding: 40px 5%;
+  text-align: left; /* Align text to the left */
+  background: linear-gradient(135deg, #7f7f7f, #a7d7a7);
+  /* border-radius: 15px; */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  gap: 20px;
+}
+
+/* Flex container for text and image */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Ensures text stays on the left */
+.textContainer {
+  flex: 1;
+}
+
+/* Ensures the image stays on the right */
+.about-image {
+  margin-top: 50px;
+  flex-shrink: 0;
+  width: 500px; /* Adjust size as needed */
+  height: auto;
+}
+/* Left Content */
+.textContainer {
+  width: 100%;
+  text-align: left; /* Ensures the text is aligned to the left */
+}
+
+/* Title Styling */
+.title h2 {
+  font-size: 55px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #728b8b, #536b53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  transition: transform 0.3s ease-in-out;
+  text-shadow: 3px 3px 12px rgba(255, 0, 204, 0.4);
+}
+
+.title h2:hover {
+  transform: scale(1.1);
+}
+
+/* Description Styling */
+.description {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #333;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.description:hover {
+  box-shadow: 0px 12px 30px #536b53;
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.scrollingMessage {
+  margin-top: 50px;
+}
+
+.scrollingMessageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scrollMessageContainer {
+  margin-top: auto; /* This will push the scrolling message to the bottom */
+}
+
+.scrollingMessageContainer marquee {
+  font-size: 30px;
+  font-weight: bold;
+  color: #7f7f7f; /* Greenish theme or adjust as per your design */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 120px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .title h2 {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}

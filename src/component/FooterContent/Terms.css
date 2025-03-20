@@ -1,0 +1,97 @@
+/* Container for the entire Terms and Conditions */
+.terms-container {
+  padding: 20px;
+  margin-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.terms-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.terms-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333; /* Dark text color */
+}
+
+.terms-header h2 {
+  font-size: 1.2rem;
+  color: #666; /* Lighter text for the date */
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Text */
+.terms-paragraph {
+  font-size: 1rem;
+  color: #444; /* Dark gray for readability */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* List Items */
+.terms-list {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.terms-list li {
+  margin-bottom: 10px;
+}
+
+/* Divider (Used between sections) */
+.terms-divider {
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Footer Section */
+.terms-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.terms-footer p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Contact Information */
+.contact-info {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .terms-paragraph {
+    font-size: 0.95rem;
+  }
+
+  .terms-list {
+    font-size: 0.95rem;
+  }
+}

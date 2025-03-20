@@ -1,0 +1,10 @@
+/* Page Layout */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes sure the page takes the full height of the viewport */
+}
+
+.lock-scroll {
+  overflow: hidden !important; /* Prevent scrolling */
+}

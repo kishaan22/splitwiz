@@ -1,0 +1,29 @@
+.footer {
+  background-color: #333;
+  min-height: 100px;
+}
+
+.footer-left {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-button {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-right img {
+  object-fit: cover;
+}
+
+.footer-right p {
+  margin: 0;
+  font-size: 14px;
+}

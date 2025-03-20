@@ -1,0 +1,94 @@
+/* Global Header Styles */
+/* Header Styles */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0); /* Ensure it's transparent */
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.Header.scrolled {
+  background-color: #f4f4f4;
+  color: #333; /* Dark text color */
+}
+
+/* Logo Section */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Emblema One", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Header.scrolled .logo {
+  background: linear-gradient(90deg, #a7d7a7, #536b53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff; /* Change logo color when scrolled */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.buttonContainer .MuiButton-root {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonContainer .MuiButton-root:hover {
+  background: #a7d7a7;
+  color: #333;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Header.scrolled .buttonContainer .MuiButton-root {
+  background: #444; /* Change button background when scrolled */
+  color: #fff; /* Change button text color when scrolled */
+  border: 2px solid #fff; /* Change border color when scrolled */
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .Header {
+    padding: 12px 6%;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttonContainer .MuiButton-root {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}

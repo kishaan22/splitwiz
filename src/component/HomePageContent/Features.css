@@ -1,0 +1,109 @@
+.features-container {
+  display: flex;
+  justify-content: space-between; /* Space out the left and right sections */
+  align-items: center; /* Vertically center content */
+  height: 100vh; /* Full screen height */
+  padding: 40px;
+}
+
+.image-container {
+  flex: 1; /* Image container takes up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  flex: 1; /* Content container takes up 50% of the width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center content vertically */
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+
+.features-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #7f7f7f;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #a7d7a7, #536b53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%; /* Ensure the list takes the full container width */
+}
+
+.feature-item {
+  font-size: 18px;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.15);
+  color: #7f7f7f;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Ensure items take the full width */
+  max-width: none; /* Allow items to expand fully */
+}
+
+.feature-item span {
+  font-weight: bold;
+  color: #536b53;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .features-container {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+    text-align: center; /* Center text for smaller screens */
+    padding: 20px;
+  }
+
+  .image-container,
+  .content-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .feature-item {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    max-width: none;
+  }
+}

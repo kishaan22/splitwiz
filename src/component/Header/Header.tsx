@@ -29,8 +29,8 @@ export const Header = () => {
     <Box className={`Header ${scrolled ? "scrolled" : ""}`}>
       {/* Logo */}
       <Box className="logoContainer">
-        <Image src="/logo.png" width={35} height={35} alt="SplitWiz logo" />
-        <Typography className="logo">SplitWiz</Typography>
+        <Image src="/logo.png" width={35} height={35} alt="SplitWizz logo" />
+        <Typography className="logo">SplitWizz</Typography>
       </Box>
 
       {/* Navigation Buttons */}

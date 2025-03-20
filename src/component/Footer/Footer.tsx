@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -47,9 +49,9 @@ export const Footer = () => {
         gap="10px"
       >
         <Box className="logoContainer">
-          <Image src="/logo.png" width={35} height={35} alt="SplitWiz logo" />
+          <Image src="/logo.png" width={35} height={35} alt="SplitWizz logo" />
           <Typography variant="body2" sx={{ color: "#fff" }}>
-            SplitWiz
+            SplitWizz
           </Typography>
           <Typography variant="body2">&copy; {currentYear}</Typography>
         </Box>

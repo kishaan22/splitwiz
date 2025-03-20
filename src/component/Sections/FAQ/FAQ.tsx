@@ -11,12 +11,12 @@ import "./FAQ.css";
 export const FAQ = () => {
   const faqs = [
     {
-      question: "What is SplitWiz?",
+      question: "What is SplitWizz?",
       answer:
-        "SplitWiz is an AI-powered bill-splitting app that helps you automatically scan receipts, recognize items, and fairly split expenses among group members. Unlike other apps, it’s completely free and monetized through ads instead of subscriptions.",
+        "SplitWizz is an AI-powered bill-splitting app that helps you automatically scan receipts, recognize items, and fairly split expenses among group members. Unlike other apps, it’s completely free and monetized through ads instead of subscriptions.",
     },
     {
-      question: "How does SplitWiz work?",
+      question: "How does SplitWizz work?",
       answer: (
         <>
           <strong>Create a Group</strong> – Add your friends and housemates.{" "}
@@ -36,9 +36,9 @@ export const FAQ = () => {
         "No! Our AI scans your uploaded bill and automatically identifies items and total amounts, saving you time.",
     },
     {
-      question: "Is SplitWiz really free?",
+      question: "Is SplitWizz really free?",
       answer:
-        "Yes! Unlike other bill-splitting apps that charge subscriptions, SplitWiz is completely free. We support the app through non-intrusive ads instead of charging users.",
+        "Yes! Unlike other bill-splitting apps that charge subscriptions, SplitWizz is completely free. We support the app through non-intrusive ads instead of charging users.",
     },
     {
       question: "Can I customize how expenses are split?",
@@ -56,7 +56,7 @@ export const FAQ = () => {
       answer: (
         <>
           <Typography component="span">
-            SplitWiz is designed for all types of shared expenses, including:
+            SplitWizz is designed for all types of shared expenses, including:
           </Typography>
           <ul>
             <li>Groceries</li>
@@ -69,9 +69,9 @@ export const FAQ = () => {
       ),
     },
     {
-      question: "Do my friends need to have SplitWiz to participate?",
+      question: "Do my friends need to have SplitWizz to participate?",
       answer:
-        "Yes, for a seamless experience, all group members should have the SplitWiz app. However, even if they don’t, you can still share detailed reports with them.",
+        "Yes, for a seamless experience, all group members should have the SplitWizz app. However, even if they don’t, you can still share detailed reports with them.",
     },
     {
       question: "Is my data secure?",
@@ -81,12 +81,12 @@ export const FAQ = () => {
     {
       question: "Will there be a mobile app?",
       answer:
-        "Yes! SplitWiz will be available for iOS and Android soon. Join our waitlist to be notified of the launch.",
+        "Yes! SplitWizz will be available for iOS and Android soon. Join our waitlist to be notified of the launch.",
     },
     {
       question: "How can I contact support?",
       answer:
-        "You can reach out to us via email at contact@splitwiz.com or through our Help Center in the app.",
+        "You can reach out to us via email at splitwizzapp@gmail.com or through our Help Center in the app.",
     },
   ];
 

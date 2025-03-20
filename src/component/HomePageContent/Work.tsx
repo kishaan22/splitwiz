@@ -31,7 +31,7 @@ export const Work = () => {
       <Box className="content-container">
         <Box className="work">
           <Typography variant="h4" className="work-title">
-            How It <span className="highlight">Works?</span>
+            How It Works?
           </Typography>
           <Box className="work-steps">
             {howItWorks.map((step, index) => (

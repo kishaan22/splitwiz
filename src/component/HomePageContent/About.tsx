@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 
 import "./About.css";
 import Image from "next/image";
@@ -12,22 +12,31 @@ export const About = () => {
           <Box className="title">
             <Typography
               sx={{
-                color: "black",
-                fontSize: "30px",
+                color: "#fff",
+                fontSize: "45px",
               }}
             >
-              SplitWiz - The Smart Way to Split Bills
+              SplitWizz
+            </Typography>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontSize: "45px",
+              }}
+            >
+              The Smart Way to Split Bills
             </Typography>
           </Box>
           <Box className="description">
             <Typography
               sx={{
-                color: "black",
-                fontSize: "15px",
+                color: "#fff",
+                fontSize: "20px",
+                textAlign: "justify",
               }}
             >
               Tired of Complicated Bill Splitting? We’ve Got You Covered!
-              SplitWhiz makes splitting expenses effortless. Just snap a picture
+              SplitWizz makes splitting expenses effortless. Just snap a picture
               of your bill, and our AI will automatically recognize items,
               calculate totals, and fairly split the cost among your group—all
               for free!
@@ -46,18 +55,18 @@ export const About = () => {
       </Box>
 
       {/* Scrolling "Coming Soon" Message */}
-      <Box className="scrollingMessage">
+      {/* <Box className="scrollingMessage">
         <Box className="scrollingMessageContainer">
           <Marquee
             direction="left"
             speed={100}
             style={{ fontSize: "25px", fontWeight: "bold", color: "#7f7f7f" }}
           >
-            Coming Soon! We’re working hard to bring SplitWiz to you! Stay tuned
+            Coming Soon! We’re working hard to bring SplitWizz to you! Stay tuned
             for our app launch.
           </Marquee>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

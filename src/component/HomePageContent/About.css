@@ -10,7 +10,7 @@
   text-align: left; /* Align text to the left */
   background: linear-gradient(135deg, #7f7f7f, #a7d7a7);
   /* border-radius: 15px; */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   gap: 20px;
@@ -64,21 +64,21 @@
 .description {
   font-size: 22px;
   line-height: 1.8;
-  color: #333;
-  background: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  /* background: rgba(255, 255, 255, 0.7); */
   border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  /* padding: 30px; */
+  /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); */
   transition: all 0.3s ease-in-out;
   max-width: 700px;
   margin-top: 20px;
 }
 
-.description:hover {
+/* .description:hover {
   box-shadow: 0px 12px 30px #536b53;
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.9);
-}
+} */
 
 .scrollingMessage {
   margin-top: 50px;

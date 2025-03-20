@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/component/Header/Header";
+import { Footer } from "@/component/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SplitWiz",
-  description: "SplitWiz",
+  title: "SplitWizz",
+  description: "SplitWizz",
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} `}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

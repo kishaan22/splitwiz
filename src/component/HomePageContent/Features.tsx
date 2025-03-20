@@ -9,7 +9,7 @@ const features = [
   },
   {
     title: "No Subscription Fees",
-    description: "Unlike others, SplitWiz is completely free forever!",
+    description: "Unlike others, SplitWizz is completely free forever!",
   },
   {
     title: "Fair & Transparent Splitting",
@@ -41,7 +41,7 @@ export const Features = () => {
         <Box className="features">
           <Box className="heading">
             <Typography variant="h4" className="features-title">
-              Why Choose <span className="highlight">SplitWiz?</span>
+              Why Choose <span className="highlight">SplitWizz?</span>
             </Typography>
           </Box>
 
